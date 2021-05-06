@@ -169,9 +169,8 @@
 		<footer class="mt-4 mb-0">   <!-- rodapé -->
 			<div class="container">
 				<div class="row">
-
 					<div class="col-12 d-flex justify-content-end mb-3"> <!-- voltar pro topo -->
-						<a href="">
+						<a href="#">
 							<button id="botao-topo" class="btn btn-outline-dark btn-sm">Voltar ao topo</button>
 						</a>
 					</div>
@@ -207,10 +206,12 @@
 				</div>
 			</div>
 		</footer>
+
+		<!--Função de roll da página -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     	<script>
-	        $("botao-topo").click(function () {
-	            $("html, body").animate({ scrollTop: 0 }, 500);
+	        $("#botao-topo").click(function () {
+	            $("html, body").animate({ scrollTop: 0 }, 600);
 	        });
     	</script>
 	</body>
