@@ -172,7 +172,7 @@
 
 					<div class="col-12 d-flex justify-content-end mb-3"> <!-- voltar pro topo -->
 						<a href="">
-							<button class="btn btn-outline-dark btn-sm">Voltar ao topo</button>
+							<button id="botao-topo" class="btn btn-outline-dark btn-sm">Voltar ao topo</button>
 						</a>
 					</div>
 
@@ -207,5 +207,11 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script>
+	        $("botao-topo").click(function () {
+	            $("html, body").animate({ scrollTop: 0 }, 500);
+	        });
+    	</script>
 	</body>
 </html>
