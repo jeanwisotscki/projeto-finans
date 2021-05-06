@@ -7,3 +7,42 @@
 	padding: 60px 0;
 	border-bottom: 1px solid #e5e5e5;
 }
+
+/* Rodapé
+**********************/
+footer p a{
+	margin: 5px 15px;
+}
+
+.icones a{
+	margin: 0 5px;
+}
+
+#links a{
+	text-decoration: none;
+}
+
+#links a:hover{
+	color: #ffc107;
+}
+
+/*Media queries para centralizar os itens do rodapé em telas menores
+********************************************************************/
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px){
+    #centralizar{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+    #centralizar{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+}
